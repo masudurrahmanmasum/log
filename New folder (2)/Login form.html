@@ -1,0 +1,111 @@
+<html>
+<head>
+ <title>login</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <style>
+ *{
+ margin:0;padding:0;
+ }
+ body{background:linear-gradient(#fc00ff,#2d9597);}
+ .form{ width:400px;height:250px;
+ margin:70px auto;;background:white;
+ box-shadow:5px 7px 20px black;    border-radius: 5px;}
+ h1 {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 24px;
+    font-family: arial;
+}
+.firstspan{
+    display: block;
+    margin-left: 11px;
+    font-family: arial;
+    font-size: 14px;
+    position: absolute;
+    margin-top: 24px;
+}
+.secondspan {
+    display: block;
+    margin-left: 11px;
+    font-family: arial;
+    font-size: 14px;
+    position: absolute;
+    margin-top: 7px;
+}
+input[type="text"] {
+    margin-left: 11px;
+    margin-top: 45px;
+	outline:none;border:2px solid blue;
+	border-radius:3px;    padding: 2px;
+}
+input[type="password"] {
+    margin-left: 11px;
+    display: block;
+    margin-top: 28px;outline:none;border:2px solid blue;
+	border-radius:3px;    padding: 2px;
+}
+legend{margin-left:90%;font-family:arial;}
+button {
+    margin-top: 18px;
+    margin-left: 16px;
+    padding: 1px 10px 1px 10px;
+    border-radius: 10px;
+    background: #f5492b;
+    border: 2px solid blue;outline:none;
+}
+button:active{
+background:#ddd;
+}
+fieldset.border {
+    border-color:blue;
+    margin: 4px auto;
+    width: 97%;    padding-bottom: 18px;
+}
+ 
+ 
+ 
+ 
+ 
+ @media(min-width:1200px){}
+  @media(min-width:768px)and (max-width:991px){}
+   @media(min-width:576px)and (max-width:767px){
+   .form {
+    width: 297px;
+    height: 246px;
+    margin: 120px auto;
+    background: white;
+	}
+   }
+    @media(min-width:0px)and (max-width:575px){
+	.form {
+    width: 297px;
+    height: 246px;
+    margin: 197px auto;
+    background: white;
+	}
+	fieldset.border {
+    width: 90%; 
+}
+legend{margin-left:80%;font-family:arial;}
+	}
+ </style>
+
+</head>
+<body>
+<div class="form">
+
+<h1>LOGIN FORM</h1>
+<fieldset class="border">
+<legend>Form</legend>
+<span class="firstspan">Email or Phone Number</span>
+<input type="text" placeholder="Type here..">
+<span class="secondspan">Password</span>
+<input type="password" placeholder="Password">
+<button onclick="alert('Thank you for submission')">Log In</button>
+</fieldset>
+
+</div>
+</body>
+</html>
